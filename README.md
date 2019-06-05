@@ -5,8 +5,8 @@ An Microservice which validates number aganist account and allows to send SMS wi
 Java, Junit, Strust2, Postgress and Redis are used.
 
 ## InBound/OutBound Redis Keys
-1. Param_FROM + "-" + Param_TO + "_STOP" - this key is used to store in redis to block the number.
-2. Param_FROM + "-" + Param_TO + "_COUNT" - this key is used to store in redis to validate dalily sms limit.
+1. Param_FROM + "_" + Param_TO + "_STOP" - this key is used to store in redis to block the number.
+2. Param_FROM + "_" + Param_TO + "_COUNT" - this key is used to store in redis to validate dalily sms limit.
 
 ## Unit Testing and Integration Testing
 1. com.ms.sms.api.tester.TestInvoker -- invoking main(String[]) will do both unit and integration testing.

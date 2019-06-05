@@ -1,4 +1,4 @@
-# SMS-API-Micrservice
+# SMS-API-Microservice
 An Microservice which validates number aganist account and allows to send SMS with daily limit.
 
 ## Tech/framework used

@@ -10,7 +10,7 @@ Java, Junit, Strust2, Postgress and Redis are used.
 
 ## Unit Testing and Integration Testing
 1. com.ms.sms.api.tester.TestInvoker -- invoking main(String[]) will do both unit and integration testing.
-All unit and inetrgation test cases are mapped in enum in respective TESTER classes. The same unit test cases are used for integration testing.
+All unit and inetrgation test cases are mapped in enum in respective CASES classes. The same unit test cases are used for integration testing.
 
 # Code Style
 ## Interceptors Class

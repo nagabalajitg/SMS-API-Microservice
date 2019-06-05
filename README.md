@@ -4,6 +4,14 @@ An Microservice which validates number aganist account and allows to send SMS wi
 ## Tech/framework used
 Java, Strust2, Postgress and Redis are used.
 
+## InBound/OutBound Redis Keys
+Param_FROM + "-" + Param_TO + "_STOP" - this key is used to store in redis to block the number
+Param_FROM + "-" + Param_TO + "_COUNT" - this key is used to store in redis to validate dalily sms limit.
+
+## Unit Testing and Integration Testing
+com.ms.sms.api.tester.TestInvoker -- invoking main(String[]) will do both unit and integration testing.
+All unit and inetrgation test cases are mapped in enum in respective TESTER classes. The same unit test cases are used for integration testing.
+
 # Code Style
 ## Interceptors Class
 com.ms.sms.api.interceptor.HTTPMethodInterceptor -- Used to validate HTTP method.
